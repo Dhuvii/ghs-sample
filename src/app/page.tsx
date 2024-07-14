@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="mx-auto max-w-screen-2xl">
+      <section className="mx-auto mt-8 max-w-screen-2xl">
         <div className="flex w-full flex-row justify-between gap-20">
           {/* left container */}
           <div className="flex w-full flex-col items-start justify-start p-6 lg:w-[50%] lg:p-8 lg:pl-20 lg:pr-0">
@@ -45,10 +45,10 @@ export default function Home() {
                 </h1>
               </div>
 
-              <div className="-mt-10 flex items-center gap-5">
+              <div className="flex items-center gap-5 lg:-mt-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-72 rotate-90 -scale-x-[1] text-blue-600"
+                  className="hidden size-72 rotate-90 -scale-x-[1] text-blue-600 lg:block"
                   viewBox="-5 -10 110 135"
                   fill="currentColor"
                 >
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex w-full gap-5">
+            <div className="mt-10 flex w-full flex-col gap-5 lg:mt-0 lg:flex-row">
               {/* card */}
               <div className="flex w-full items-center justify-between gap-5 rounded-xl border bg-gray-100 p-5">
                 <div className="">
@@ -170,7 +170,7 @@ export default function Home() {
           <div className="relative m-8 ml-0 mr-20 hidden w-[50%] items-center justify-center overflow-hidden rounded-[4rem] shadow-xl lg:flex">
             <div className="absolute inset-0 z-20 bg-gradient-to-t from-blue-950/80 to-transparent"></div>
             <img
-              src="/hero_image_2.jpg"
+              src="/hero_image.jpg"
               className="absolute inset-0 z-10 h-full w-full object-cover"
               alt=""
             />
@@ -193,7 +193,7 @@ export default function Home() {
 
       <section className="mt-10 w-full bg-[#102537] py-14">
         <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-center">
-          <p className="text-base font-medium tracking-wider text-white/90">
+          <p className="px-10 text-center text-base font-medium tracking-wider text-white/90">
             Trusted by the 1000+ modern teams and companies
           </p>
 
@@ -242,13 +242,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-screen-2xl px-20 py-20">
-        <div className="flex w-full items-center justify-between gap-10">
-          <h2 className="max-w-2xl text-5xl font-medium leading-[3.5rem] text-gray-800">
+      <section className="mx-auto w-full max-w-screen-2xl px-6 py-20 md:px-20">
+        <div className="flex w-full flex-col items-center justify-between gap-10 lg:flex-row">
+          <h2 className="text-5xl font-medium leading-[3.5rem] text-gray-800 lg:max-w-2xl">
             86% of our members get better within 12 weeks
           </h2>
 
-          <p className="max-w-lg text-sm text-gray-600">
+          <p className="text-sm text-gray-600 lg:max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cum
             placeat modi voluptatibus debitis sed. Soluta ex esse corporis eius
             iusto magnam enim nihil odit eligendi, maxime veritatis commodi
@@ -257,9 +257,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-screen-2xl px-20 pb-20">
-        <div className="relative w-full rounded-[3rem] bg-blue-700 p-20">
-          <div className="pattern absolute inset-0 opacity-80"></div>
+      <section className="mx-auto w-full max-w-screen-2xl px-6 pb-20 md:px-20">
+        <div className="relative w-full rounded-[3rem] bg-gradient-to-br from-blue-600 to-blue-700 p-10 lg:p-20">
+          <div className="pattern absolute inset-0 opacity-10"></div>
 
           <div className="relative">
             <h2 className="mx-auto max-w-lg text-center text-5xl font-semibold text-white">
