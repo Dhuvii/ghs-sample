@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+bg - #421CA4 rgb(66, 28, 164)
+hover - #4A1FB7 rgb(74, 31, 183)
+text - #ffffff rgb(255, 255, 255)
+active = #4A1FB7 rgb(74, 31, 183)
+ring - #421CA4 rgb(66, 28, 164)
+disabled - #E2D7FF rgb(226, 215, 255)
+*/
+.default {
+  --primary-bg: 66, 28, 164;
+}
+
+.default .btn-primary {
+  --btn-bg-color: 66, 28, 164;
+  --btn-text-color: 255, 255, 255;
+  --btn-spinner-color: 255, 255, 255;
+  --btn-bg-hover-color: 74, 31, 183;
+  --btn-bg-active-color: 74, 31, 183;
+  --btn-ring-color: 66, 28, 164;
+  --btn-disabled-color: 226, 215, 255;
+}
+
+.default .btn-ghost {
+  --btn-bg-color: transparent;
+  --btn-text-color: 31, 41, 55;
+  --btn-spinner-color: 31, 41, 55;
+  --btn-bg-hover-color: transparent;
+  --btn-bg-active-color: transparent;
+  --btn-ring-color: 209, 213, 219;
+  --btn-disabled-color: 209, 213, 219;
+}
+
+.default .btn-unstyled {
+  --btn-bg-color: 255, 255, 255;
+  --btn-text-color: 0, 0, 0;
+  --btn-spinner-color: 31, 41, 55;
+  --btn-bg-hover-color: 229, 231, 235;
+  --btn-bg-active-color: 229, 231, 235;
+  --btn-ring-color: 55, 65, 81;
+  --btn-disabled-color: 229, 231, 235;
+}
+
+/* 
+bg - #ff0a54 rgb(255, 10, 84)
+hover - #FF3874 rgb(255, 56, 116)
+text - #ffffff rgb(255, 255, 255)
+active = #FF3874 rgb(255, 56, 116)
+ring - #ff0a54 rgb(255, 10, 84)
+disabled - #FFB3C9 rgb(255, 179, 201)
+*/
+.rose {
+  --primary-bg: 255, 10, 84;
+}
+
+.rose .btn-primary {
+  --btn-bg-color: 255, 10, 84;
+  --btn-text-color: 255, 255, 255;
+  --btn-spinner-color: 255, 255, 255;
+  --btn-bg-hover-color: 255, 56, 116;
+  --btn-bg-active-color: 255, 56, 116;
+  --btn-ring-color: 255, 10, 84;
+  --btn-disabled-color: 255, 179, 201;
+}
+
+.rose .btn-ghost {
+  --btn-bg-color: transparent;
+  --btn-text-color: 31, 41, 55;
+  --btn-spinner-color: 31, 41, 55;
+  --btn-bg-hover-color: transparent;
+  --btn-bg-active-color: transparent;
+  --btn-ring-color: 209, 213, 219;
+  --btn-disabled-color: 209, 213, 219;
+}
+
+.rose .btn-unstyled {
+  --btn-bg-color: 255, 255, 255;
+  --btn-text-color: 0, 0, 0;
+  --btn-spinner-color: 31, 41, 55;
+  --btn-bg-hover-color: 229, 231, 235;
+  --btn-bg-active-color: 229, 231, 235;
+  --btn-ring-color: 55, 65, 81;
+  --btn-disabled-color: 229, 231, 235;
+}
+
+/* 
+bg - #fdc500 rgb(253, 197, 0)
+hover - #FFE175  rgb(255, 225, 117)
+text - #202020 rgb(32, 32, 32)
+active =#FFE175  rgb(255, 225, 117)
+ring -  #fdc500 rgb(253, 197, 0)
+disabled - #FFB3C9 rgb(255, 179, 201)
+*/
+.sunshine {
+  --primary-bg: 253, 197, 0;
+}
+
+.sunshine .btn-primary {
+  --btn-bg-color: 253, 197, 0;
+  --btn-text-color: 32, 32, 32;
+  --btn-spinner-color: 32, 32, 32;
+  --btn-bg-hover-color: 255, 225, 117;
+  --btn-bg-active-color: 255, 225, 117;
+  --btn-ring-color: 253, 197, 0;
+  --btn-disabled-color: 255, 179, 201;
+}
+
+.sunshine .btn-ghost {
+  --btn-bg-color: transparent;
+  --btn-text-color: 31, 41, 55;
+  --btn-spinner-color: 31, 41, 55;
+  --btn-bg-hover-color: transparent;
+  --btn-bg-active-color: transparent;
+  --btn-ring-color: 209, 213, 219;
+  --btn-disabled-color: 209, 213, 219;
+}
+
+.sunshine .btn-unstyled {
+  --btn-bg-color: 255, 255, 255;
+  --btn-text-color: 0, 0, 0;
+  --btn-spinner-color: 31, 41, 55;
+  --btn-bg-hover-color: 229, 231, 235;
+  --btn-bg-active-color: 229, 231, 235;
+  --btn-ring-color: 55, 65, 81;
+  --btn-disabled-color: 229, 231, 235;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+pre > div > div {
+  border-radius: 1rem !important;
+}
+
+.pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M29.42 29.41c.36-.36.58-.85.58-1.4V0h-4v26H0v4h28c.55 0 1.05-.22 1.41-.58h.01zm0 29.18c.36.36.58.86.58 1.4V88h-4V62H0v-4h28c.56 0 1.05.22 1.41.58zm29.16 0c-.36.36-.58.85-.58 1.4V88h4V62h26v-4H60c-.55 0-1.05.22-1.41.58h-.01zM62 26V0h-4v28c0 .55.22 1.05.58 1.41.37.37.86.59 1.41.59H88v-4H62zM18 36c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm16-26a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 58a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 78a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zM34 4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm-8 82a2 2 0 1 1 4 0v2h-4v-2zm0-68a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V18zM66 4a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm0 72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm-48 0a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm0-72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm24-4h4v2a2 2 0 1 1-4 0V0zm0 60a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V60zm14-24c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm-28-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 26a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM36 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 68a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-34a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-12a2 2 0 1 0 0 4 6 6 0 1 1 0 12 2 2 0 1 0 0 4 10 10 0 1 0 0-20zm-64 0a2 2 0 1 1 0 4 6 6 0 1 0 0 12 2 2 0 1 1 0 4 10 10 0 1 1 0-20zm56-12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-48 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm24 32a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm36-36a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM10 44c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm56 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm8 24c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zM3 68c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm0-48c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm71 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm6 66a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 86a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-68A6 6 0 1 1 8 2a6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm36 36a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'/%3E%3C/g%3E%3C/svg%3E");
+}
